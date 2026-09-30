@@ -1,0 +1,31 @@
+services:
+  querylab-frontend:
+    build: .
+    ports:
+      - "4173:80"
+    environment:
+      VITE_API_URL: http://localhost:8080/api
+    depends_on:
+      - querylab-api
+
+  querylab-api:
+    build: ./docker/api
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: 8080
+      DATABASE_URL: postgres://querylab:querylab@postgres:5432/querylab
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: querylab
+      POSTGRES_PASSWORD: querylab
+      POSTGRES_DB: querylab
+    ports:
+      - "5432:5432"
+    volumes:
+      - querylab_pg:/var/lib/postgresql/data
+
+volumes:
+  querylab_pg:

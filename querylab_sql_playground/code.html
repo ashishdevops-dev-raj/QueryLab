@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed":"#00174b","on-secondary-container":"#00714e","on-background":"#0b1c30","on-primary-fixed-variant":"#003ea8","on-error-container":"#93000a","secondary-container":"#82f5c1","tertiary-fixed":"#ffdcc3","secondary-fixed":"#85f8c4","primary-fixed":"#dbe1ff","on-primary":"#ffffff","surface-bright":"#f8f9ff","on-tertiary-fixed-variant":"#6e3900","surface-container-low":"#eff4ff","surface":"#f8f9ff","on-secondary-fixed-variant":"#005137","background":"#f8f9ff","surface-dim":"#cbdbf5","tertiary":"#824500","on-secondary-fixed":"#002114","inverse-on-surface":"#eaf1ff","surface-container-highest":"#d3e4fe","tertiary-container":"#a65900","surface-container-high":"#dce9ff","inverse-surface":"#213145","on-tertiary-container":"#ffede1","on-secondary":"#ffffff","surface-container-lowest":"#ffffff","primary-container":"#2563eb","secondary-fixed-dim":"#68dba9","surface-tint":"#0053db","on-primary-container":"#eeefff","surface-variant":"#d3e4fe","tertiary-fixed-dim":"#ffb77d","on-tertiary":"#ffffff","on-tertiary-fixed":"#2f1500","secondary":"#006c4a","surface-container":"#e5eeff","primary-fixed-dim":"#b4c5ff","error":"#ba1a1a","on-surface-variant":"#434655","on-error":"#ffffff","on-surface":"#0b1c30","outline":"#737686","primary":"#004ac6","inverse-primary":"#b4c5ff","error-container":"#ffdad6","outline-variant":"#c3c6d7"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{margin:"0.5rem",gutter:"0.75rem","space-sm":"0.375rem","space-xl":"1rem","margin-desktop":"0.75rem","gutter-desktop":"1rem","space-2xl":"1.5rem","space-2xs":"0.125rem","space-md":"0.5rem","space-xs":"0.25rem","space-lg":"0.75rem"},fontFamily:{"label-sm":["JetBrains Mono"],"code-md":["JetBrains Mono"],"headline-lg":["Inter"],"headline-md":["Inter"],"code-sm":["JetBrains Mono"],"body-md":["Inter"],"headline-sm":["Inter"],"code-lg":["JetBrains Mono"],"body-sm":["Inter"],"body-lg":["Inter"],"label-md":["Inter"]},fontSize:{"label-sm":["0.6875rem",{lineHeight:"0.875rem",letterSpacing:"0.04em",fontWeight:"500"}],"code-md":["0.8125rem",{lineHeight:"1.375rem",fontWeight:"400"}],"headline-lg":["1.75rem",{lineHeight:"2.25rem",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-md":["1.25rem",{lineHeight:"1.75rem",letterSpacing:"-0.015em",fontWeight:"600"}],"code-sm":["0.75rem",{lineHeight:"1.25rem",fontWeight:"400"}],"body-md":["0.875rem",{lineHeight:"1.375rem",fontWeight:"400"}],"headline-sm":["1rem",{lineHeight:"1.5rem",letterSpacing:"-0.01em",fontWeight:"600"}],"code-lg":["0.9375rem",{lineHeight:"1.625rem",fontWeight:"400"}],"body-sm":["0.8125rem",{lineHeight:"1.25rem",fontWeight:"400"}],"body-lg":["0.9375rem",{lineHeight:"1.5rem",fontWeight:"400"}],"label-md":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.02em",fontWeight:"500"}]}}}};</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter-desktop flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-lg shrink-0"><div class="flex items-center gap-space-sm"><img alt="QueryLab Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XZnX_WUFMDDdEmhQ5QbhNhk537vit6yNCt2gYa9pUt7AgPQEm-yTN-gK0Pk3oSyheiGO46v6loyubPCMIVAK_iSmBMQYYS4I40J_-ZShEqXzykTK_jdSPATMCZQ0oYkD88Pm3HfzlknvtoGKrJpDnnJrR-oqO6PsFzPUbHrCfK26U5Yor6igiXKXYB8GdKkiH0GxY9-D-4thKaynESli8G6KRl7QKMzRL0hXZ3WMtypiJr2Z43ll3hwzQ"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">QueryLab</span><span class="px-space-xs py-space-2xs bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">v2.4</span></div><div class="h-5 w-px bg-outline-variant/40 mx-space-2xs"></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded"><span class="material-symbols-outlined text-outline text-[18px]">description</span><span class="font-body-sm text-body-sm text-on-surface font-medium">Example Run</span><button class="text-outline hover:text-on-surface p-space-2xs flex items-center" type="button"><span class="material-symbols-outlined text-[15px]">edit</span></button><span class="flex items-center gap-space-2xs px-space-xs py-space-2xs bg-secondary-container/30 text-secondary rounded font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Saved</span></div></div><div class="flex items-center gap-space-lg flex-1 justify-center max-w-2xl"><div class="flex items-center gap-space-xs bg-surface-container-lowest px-space-md py-space-xs rounded shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><span class="material-symbols-outlined text-primary text-[18px]">database</span><select class="bg-transparent font-code-sm text-code-sm text-on-surface focus:outline-none cursor-pointer pr-space-xs"><option value="sqlserver">SQL Server 2022</option><option value="postgres">PostgreSQL 16</option><option value="mysql">MySQL 8.4</option><option value="sqlite">SQLite 3</option><option value="duckdb">DuckDB</option></select></div><div class="flex items-center gap-space-xs"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">save</span>Save</button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">call_split</span>Fork</button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">download</span>Import</button><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm transition-colors" type="button"><span class="material-symbols-outlined text-[16px]">share</span>Share</button></div></div><div class="flex items-center gap-space-md shrink-0"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[17px] text-outline">history</span><span class="font-code-sm text-code-sm text-on-surface-variant">14</span></button><nav class="flex items-center p-space-2xs bg-surface-container-low rounded" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="sql-playground" href="#">Playground</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" data-path="sql-interview" href="#">SQL Interview</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm transition-colors" data-path="database-dashboard" href="#">Dashboard</a></nav><div class="flex items-center gap-space-2xs"><button class="p-space-xs text-outline hover:text-on-surface rounded hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><button class="p-space-xs text-outline hover:text-on-surface rounded hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">settings</span></button></div><div class="flex items-center gap-space-xs pl-space-2xs cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpkRg-RqGjvYqig8mD3n7tGuLYo9xhoA_pjt_S8nAdCnRr2VXt1H_HHmiY7jQrqIEDPpGILnumdGvBdNr13kCvp7UBKxiSVJdYZGLjU9a_mJb3zhbm1vW9FuUlfiDFOqx2jarwMc4Htv0ZUpgtjTCbyxFX8MY0k_-r7eJfqO8rm-dxTEPJ3a80REfDtWgRfSXQNb6La1Q71SW9g-tnTz5WNDkr14MoFxQZxPPp5TpZ7qXUZKHYjyH"/><span class="material-symbols-outlined text-outline text-[16px]">expand_more</span></div></div></div></header><aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex flex-col justify-between p-space-md"><div class="flex flex-col gap-space-lg"><div class="flex items-center justify-between px-space-xs"><span class="font-label-md text-label-md uppercase tracking-wider text-outline">Schema Explorer</span><button class="text-outline hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[18px]">refresh</span></button></div><nav class="flex flex-col gap-space-2xs" data-active-classes="bg-primary-container text-on-primary-container font-medium rounded"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-medium rounded" data-path="sql-playground" href="#"><span class="material-symbols-outlined text-[18px]">terminal</span>Query Workspace</a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded transition-colors" data-path="schema-browser" href="#"><span class="material-symbols-outlined text-[18px]">account_tree</span>Tables &amp; Views</a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded transition-colors" data-path="query-performance" href="#"><span class="material-symbols-outlined text-[18px]">speed</span>Profiler &amp; Plans</a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded transition-colors" data-path="sql-interview" href="#"><span class="material-symbols-outlined text-[18px]">quiz</span>Mock Interview</a><a class="flex items-center gap-space-sm px-space-md py-space-sm text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded transition-colors" data-path="database-dashboard" href="#"><span class="material-symbols-outlined text-[18px]">monitoring</span>Metrics Dashboard</a></nav></div><div class="p-space-sm bg-surface-container-low rounded flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Active Port 1433</span></div><span class="font-label-sm text-label-sm text-outline">12ms</span></div></aside><div class="pl-64"><main class="w-full min-h-[calc(100vh-4rem)] pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface select-none">
+<!-- Toast Notification Container -->
+<div class="fixed top-20 right-8 z-[100] flex flex-col gap-space-xs pointer-events-none" id="toast-container"></div>
+<!-- Main Split Layout (Collapsible Sidebar + 2x2 IDE Grid) -->
+<div class="flex w-full min-h-[calc(100vh-4rem)] relative overflow-hidden bg-surface">
+<!-- LEFT PROJECT SIDEBAR (240px toggleable) -->
+<aside class="w-60 bg-surface-container-lowest shrink-0 transition-all duration-300 ease-in-out flex flex-col justify-between z-30 shadow-sm relative border-r-0" id="project-sidebar">
+<div class="flex flex-col h-full overflow-y-auto p-space-md gap-space-lg">
+<!-- Sidebar Header / Collapse -->
+<div class="flex items-center justify-between px-space-xs pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">account_tree</span>
+<span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">Workspace</span>
+</div>
+<button class="p-space-2xs text-outline hover:text-on-surface rounded hover:bg-surface-container-low transition-colors" id="sidebar-toggle-btn" title="Collapse Sidebar" type="button">
+<span class="material-symbols-outlined text-[18px]">first_page</span>
+</button>
+</div>
+<!-- Section: PROJECTS -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Projects</span>
+<button class="text-outline hover:text-on-surface" type="button"><span class="material-symbols-outlined text-[15px]">add</span></button>
+</div>
+<div class="flex flex-col gap-space-2xs">
+<a class="flex items-center justify-between px-space-md py-space-xs bg-primary-container text-on-primary-container rounded font-body-sm text-body-sm font-medium" href="#">
+<span class="truncate flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span id="active-project-name">Example Run</span>
+</span>
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded font-body-sm text-body-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-outline">folder</span>
+<span class="truncate">SQL Interview</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded font-body-sm text-body-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-outline">folder</span>
+<span class="truncate">Production Debugging</span>
+</a>
+<a class="flex items-center gap-space-xs px-space-md py-space-xs text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface rounded font-body-sm text-body-sm transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px] text-outline">folder</span>
+<span class="truncate">E-commerce DB</span>
+</a>
+</div>
+</div>
+<!-- Section: RECENT QUERIES -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Recent Queries</span>
+<button class="text-outline hover:text-primary text-[12px] font-label-sm" id="trigger-history-drawer-btn" title="View all" type="button">All</button>
+</div>
+<div class="flex flex-col gap-space-2xs font-code-sm text-code-sm">
+<div class="group flex flex-col p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors" onclick="loadSampleQuery('duplicate')">
+<span class="text-on-surface truncate group-hover:text-primary">Find duplicate users</span>
+<span class="text-outline text-label-sm font-label-sm">2m ago • 4 rows</span>
+</div>
+<div class="group flex flex-col p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors" onclick="loadSampleQuery('salary')">
+<span class="text-on-surface truncate group-hover:text-primary">Second highest salary</span>
+<span class="text-outline text-label-sm font-label-sm">10m ago • 1 row</span>
+</div>
+<div class="group flex flex-col p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors" onclick="loadSampleQuery('dept')">
+<span class="text-on-surface truncate group-hover:text-primary">Employee department count</span>
+<span class="text-outline text-label-sm font-label-sm">1h ago • 8 rows</span>
+</div>
+<div class="group flex flex-col p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors" onclick="loadSampleQuery('top3')">
+<span class="text-on-surface truncate group-hover:text-primary">Top 3 salaries</span>
+<span class="text-outline text-label-sm font-label-sm">Yesterday • 3 rows</span>
+</div>
+</div>
+</div>
+<!-- Section: SCHEMAS -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Schemas (public)</span>
+<span class="font-label-sm text-label-sm text-outline">4 tables</span>
+</div>
+<div class="flex flex-col gap-space-2xs font-code-sm text-code-sm">
+<div class="flex items-center justify-between px-space-xs py-space-2xs rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">table_chart</span>users
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs rounded">4 cols</span>
+</div>
+<div class="flex items-center justify-between px-space-xs py-space-2xs rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">table_chart</span>posts
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs rounded">5 cols</span>
+</div>
+<div class="flex items-center justify-between px-space-xs py-space-2xs rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">table_chart</span>employees
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs rounded">4 cols</span>
+</div>
+<div class="flex items-center justify-between px-space-xs py-space-2xs rounded hover:bg-surface-container-low cursor-pointer">
+<span class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">table_chart</span>departments
+              </span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface-variant px-space-xs rounded">3 cols</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Mini Active User Card -->
+<div class="p-space-md bg-surface-container-low m-space-sm rounded-lg flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<img alt="Alex Morgan" class="w-9 h-9 rounded-full object-cover shrink-0 ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpkRg-RqGjvYqig8mD3n7tGuLYo9xhoA_pjt_S8nAdCnRr2VXt1H_HHmiY7jQrqIEDPpGILnumdGvBdNr13kCvp7UBKxiSVJdYZGLjU9a_mJb3zhbm1vW9FuUlfiDFOqx2jarwMc4Htv0ZUpgtjTCbyxFX8MY0k_-r7eJfqO8rm-dxTEPJ3a80REfDtWgRfSXQNb6La1Q71SW9g-tnTz5WNDkr14MoFxQZxPPp5TpZ7qXUZKHYjyH"/>
+<div class="flex flex-col min-w-0">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface truncate">Alex Morgan</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-space-2xs">
+<span class="material-symbols-outlined text-[12px]">verified</span> Pro Tier
+            </span>
+</div>
+</div>
+<button class="text-outline hover:text-on-surface p-space-2xs" type="button">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</aside>
+<!-- Floating Re-open Tab (when sidebar collapsed) -->
+<button class="hidden absolute top-3 left-3 z-40 bg-surface-container-lowest shadow-md p-space-xs rounded text-primary hover:bg-surface-container-low" id="sidebar-expand-btn" title="Expand Sidebar" type="button">
+<span class="material-symbols-outlined text-[18px]">last_page</span>
+</button>
+<!-- MAIN 2x2 IDE WORKSPACE -->
+<main class="flex-1 grid grid-cols-1 xl:grid-cols-2 grid-rows-2 gap-space-xs p-space-xs bg-surface-container-high/40 overflow-hidden h-[calc(100vh-4rem)]">
+<!-- ================= PANEL 1: [1] DEFINE DATABASE STRUCTURE ================= -->
+<section class="flex flex-col bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden border-0">
+<!-- Panel 1 Header -->
+<div class="h-10 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 select-none">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-bold">[1]</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Define Database Structure</span>
+<span class="font-code-sm text-code-sm text-outline-variant">schema.dbml</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-primary font-body-sm text-body-sm rounded shadow-sm transition-colors" id="btn-view-er" type="button">
+<span class="material-symbols-outlined text-[15px]">schema</span>
+<span>View ER Diagram</span>
+</button>
+<button class="p-space-2xs text-outline hover:text-on-surface rounded" id="btn-syntax-toggle" title="Toggle Syntax Theme" type="button">
+<span class="material-symbols-outlined text-[17px]">palette</span>
+</button>
+<button class="p-space-2xs text-outline hover:text-on-surface rounded" title="Minimize Panel" type="button">
+<span class="material-symbols-outlined text-[17px]">unfold_less</span>
+</button>
+</div>
+</div>
+<!-- Panel 1 Code Area (DBML Monaco-Style Editor) -->
+<div class="flex-1 flex overflow-hidden font-code-sm text-code-sm bg-surface-container-lowest relative">
+<!-- Gutter / Line Numbers -->
+<div class="w-11 bg-surface-container-lowest/60 text-outline/60 text-right pr-space-sm py-space-sm select-none shrink-0 space-y-0.5 font-label-sm text-label-sm">
+<div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div>
+</div>
+<!-- Syntax Code Canvas -->
+<div class="flex-1 py-space-sm pl-space-xs pr-space-md overflow-y-auto whitespace-pre font-code-sm text-code-sm leading-relaxed text-on-surface focus:outline-none" contenteditable="true" spellcheck="false">
+<span class="text-outline italic">// Use DBML to define your database structure</span>
+<span class="text-outline italic">// Docs: https://dbml.dbdiagram.io/docs</span>
+<span class="text-primary font-semibold">Table</span> <span class="text-tertiary-container font-semibold">users</span> {
+  <span class="text-on-surface">id</span> <span class="text-secondary font-medium">int</span> [<span class="text-tertiary font-bold">pk</span>, <span class="text-primary">increment</span>]
+  <span class="text-on-surface">username</span> <span class="text-secondary font-medium">varchar</span>
+<span class="text-on-surface">role</span> <span class="text-secondary font-medium">varchar</span>
+<span class="text-on-surface">age</span> <span class="text-secondary font-medium">int</span>
+}
+
+<span class="text-primary font-semibold">Table</span> <span class="text-tertiary-container font-semibold">posts</span> {
+  <span class="text-on-surface">id</span> <span class="text-secondary font-medium">int</span> [<span class="text-tertiary font-bold">pk</span>, <span class="text-primary">increment</span>]
+  <span class="text-on-surface">user_id</span> <span class="text-secondary font-medium">int</span>
+<span class="text-on-surface">title</span> <span class="text-secondary font-medium">varchar</span>
+<span class="text-on-surface">body</span> <span class="text-secondary font-medium">text</span>
+<span class="text-on-surface">status</span> <span class="text-secondary font-medium">varchar</span>
+}
+
+<span class="text-primary font-semibold">Ref:</span> posts.user_id <span class="text-tertiary font-bold">&gt;</span> users.id<span class="inline-block w-1.5 h-4 bg-primary align-middle ml-1 animate-pulse"></span>
+</div>
+</div>
+<!-- Panel 1 Footer -->
+<div class="h-7 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-2xs text-secondary font-medium">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> DBML Validated
+            </span>
+<span>2 tables</span>
+<span>1 relationship</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-surface-container rounded text-outline">Tab: Complete</span>
+<span>UTF-8</span>
+</div>
+</div>
+</section>
+<!-- ================= PANEL 3: [3] WRITE SQL QUERY ================= -->
+<section class="flex flex-col bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden border-0">
+<!-- Panel 3 Header -->
+<div class="h-10 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 select-none">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-bold">[3]</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Write SQL Query</span>
+<span class="font-code-sm text-code-sm text-outline-variant">query.sql</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container text-body-sm font-body-sm rounded transition-colors" id="btn-format-sql" type="button">
+              Format
+            </button>
+<button class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container text-body-sm font-body-sm rounded transition-colors" id="btn-explain-plan" type="button">
+              Explain Plan
+            </button>
+<button class="px-space-sm py-space-2xs text-on-surface-variant hover:bg-surface-container text-body-sm font-body-sm rounded transition-colors" id="btn-clear-query" type="button">
+              Clear
+            </button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface text-body-sm font-body-sm rounded shadow-sm transition-colors" id="btn-open-history" type="button">
+<span class="material-symbols-outlined text-[15px]">schedule</span>
+<span>History (3)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs bg-primary hover:bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold rounded shadow-sm transition-all active:scale-95" id="btn-run-query" type="button">
+<span class="material-symbols-outlined text-[16px]" id="run-icon">play_arrow</span>
+<span class="material-symbols-outlined text-[16px] animate-spin hidden" id="run-spinner">progress_activity</span>
+<span>Run</span>
+<kbd class="ml-1 px-1 bg-white/20 rounded font-code-sm text-[10px]">Ctrl+↵</kbd>
+</button>
+</div>
+</div>
+<!-- Panel 3 Code Canvas (Monaco-Style SQL Editor) -->
+<div class="flex-1 flex overflow-hidden font-code-sm text-code-sm bg-surface-container-lowest relative">
+<!-- Gutter -->
+<div class="w-11 bg-surface-container-lowest/60 text-outline/60 text-right pr-space-sm py-space-sm select-none shrink-0 space-y-0.5 font-label-sm text-label-sm">
+<div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+</div>
+<!-- Editable Code block -->
+<div class="flex-1 py-space-sm pl-space-xs pr-space-md overflow-y-auto whitespace-pre font-code-sm text-code-sm leading-relaxed text-on-surface focus:outline-none" contenteditable="true" id="sql-editor-area" spellcheck="false">
+<span class="text-outline italic">-- Get all users and related posts</span>
+<span class="text-primary font-bold">SELECT</span>
+<span class="text-on-surface">u.id</span>,
+    <span class="text-on-surface">u.username</span>,
+    <span class="text-on-surface">u.role</span>,
+    <span class="text-on-surface">p.title</span>,
+    <span class="text-on-surface">p.body</span>,
+    <span class="text-on-surface">p.user_id</span>,
+    <span class="text-on-surface">p.status</span>
+<span class="text-primary font-bold">FROM</span> <span class="text-tertiary-container font-semibold">users</span> u
+<span class="text-primary font-bold">JOIN</span> <span class="text-tertiary-container font-semibold">posts</span> p
+    <span class="text-primary font-bold">ON</span> u.id = p.user_id;</div>
+</div>
+<!-- Execution status strip directly below SQL editor -->
+<div class="h-8 bg-surface-container px-space-md flex items-center justify-between shrink-0 font-label-sm text-label-sm" id="execution-status-strip">
+<div class="flex items-center gap-space-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span id="exec-status-text">✓ 3 rows returned • Executed in 1.73 ms • Memory: 42 KB</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>PostgreSQL Engine v16.2</span>
+</div>
+</div>
+</section>
+<!-- ================= PANEL 2: [2] DEFINE DATA ================= -->
+<section class="flex flex-col bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden border-0">
+<!-- Panel 2 Header -->
+<div class="h-10 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 select-none">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-bold">[2]</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Define Data</span>
+</div>
+<!-- Table Switcher Tabs -->
+<div class="flex items-center bg-surface-container p-space-2xs rounded">
+<button class="px-space-sm py-space-2xs bg-surface-container-lowest shadow-sm rounded text-primary font-body-sm text-body-sm font-semibold flex items-center gap-space-2xs transition-all" id="tab-data-users" onclick="switchDataTable('users')" type="button">
+<span>users</span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-1 rounded-full" id="badge-users-count">2</span>
+</button>
+<button class="px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface rounded font-body-sm text-body-sm flex items-center gap-space-2xs transition-all" id="tab-data-posts" onclick="switchDataTable('posts')" type="button">
+<span>posts</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-1 rounded-full" id="badge-posts-count">3</span>
+</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-primary text-on-primary font-body-sm text-body-sm font-medium rounded shadow-sm hover:bg-primary-container transition-colors" id="btn-add-row" type="button">
+<span class="material-symbols-outlined text-[15px]">add</span>New Row
+            </button>
+<button class="px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded shadow-sm transition-colors" id="btn-open-import" type="button">
+              Import CSV
+            </button>
+<button class="px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded shadow-sm transition-colors" onclick="triggerDownloadCSV('table_export.csv')" type="button">
+              Export CSV
+            </button>
+<button class="px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded shadow-sm transition-colors" id="btn-gen-sample" type="button">
+              Generate Sample
+            </button>
+</div>
+</div>
+<!-- Realistic Spreadsheet Data Editor -->
+<div class="flex-1 overflow-auto bg-surface-container-lowest relative font-code-sm text-code-sm">
+<table class="w-full text-left border-collapse min-w-[500px]" id="spreadsheet-table">
+<thead class="sticky top-0 bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none z-10 shadow-sm">
+<tr id="data-editor-header-row">
+<th class="w-12 py-space-xs px-space-sm text-center text-outline font-normal">#</th>
+<th class="py-space-xs px-space-md">id <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+<th class="py-space-xs px-space-md">username <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+<th class="py-space-xs px-space-md">role <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+<th class="py-space-xs px-space-md">age <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+<th class="w-12"></th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40" id="data-editor-body">
+<!-- Row 1 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">1</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">1</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">John</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">admin</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">20</td>
+<td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-outline hover:text-error" onclick="deleteTableRow(this)" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors group">
+<td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">2</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">2</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">Jane</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">user</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">30</td>
+<td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="text-outline hover:text-error" onclick="deleteTableRow(this)" type="button"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</td>
+</tr>
+<!-- Row 3: Ghost/Inline editable state -->
+<tr class="cursor-pointer text-outline hover:text-primary hover:bg-surface-container-low/60 transition-colors" id="ghost-row" onclick="inlineAddRow()">
+<td class="py-space-xs px-space-sm text-center text-outline/50 bg-surface-container-low/30">+</td>
+<td class="py-space-xs px-space-md italic font-label-md text-label-md" colspan="5">
+                  + Click to add row...
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Panel 2 Footer -->
+<div class="h-7 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span id="data-grid-count-status">2 rows, 4 columns</span>
+<span>•</span>
+<span class="text-secondary font-medium">All changes staged</span>
+<span>•</span>
+<span>Auto-sync on</span>
+</div>
+<div class="flex items-center gap-space-xs text-outline">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Live Bind</span>
+</div>
+</div>
+</section>
+<!-- ================= PANEL 4: QUERY RESULT ================= -->
+<section class="flex flex-col bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden border-0">
+<!-- Panel 4 Header -->
+<div class="h-10 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 select-none">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-space-2xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm font-bold">Query Result</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant" id="result-badge-count">3 rows</span>
+</div>
+<!-- Controls -->
+<div class="flex items-center gap-space-xs">
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-2 text-outline text-[16px]">search</span>
+<input class="h-7 pl-7 pr-space-xs bg-surface-container-lowest rounded font-body-sm text-body-sm text-on-surface focus:outline-none w-36 focus:w-48 transition-all shadow-sm" id="result-filter-input" onkeyup="filterResultTable()" placeholder="Filter results..." type="text"/>
+</div>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded shadow-sm transition-colors" id="btn-download-results" onclick="triggerDownloadCSV('results.csv')" type="button">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span>Download CSV</span>
+</button>
+<button class="flex items-center gap-space-2xs px-space-sm py-space-2xs bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded shadow-sm transition-colors" id="btn-copy-json" type="button">
+<span class="material-symbols-outlined text-[15px]">content_copy</span>
+<span>Copy JSON</span>
+</button>
+<button class="p-space-2xs text-outline hover:text-on-surface rounded" id="btn-maximize-result" title="Maximize View" type="button">
+<span class="material-symbols-outlined text-[17px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Clean Interactive Data Table with Sticky Headers -->
+<div class="flex-1 overflow-auto bg-surface-container-lowest relative font-code-sm text-code-sm">
+<table class="w-full text-left border-collapse min-w-[750px]" id="result-table">
+<thead class="sticky top-0 bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none z-10 shadow-sm">
+<tr>
+<th class="w-10 py-space-xs px-space-sm text-center text-outline font-normal">#</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(1)">
+<div class="flex items-center gap-space-2xs">id <span class="text-outline text-label-sm font-label-sm">[INT]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(2)">
+<div class="flex items-center gap-space-2xs">username <span class="text-outline text-label-sm font-label-sm">[VARCHAR]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(3)">
+<div class="flex items-center gap-space-2xs">role <span class="text-outline text-label-sm font-label-sm">[VARCHAR]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(4)">
+<div class="flex items-center gap-space-2xs">title <span class="text-outline text-label-sm font-label-sm">[VARCHAR]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(5)">
+<div class="flex items-center gap-space-2xs">body <span class="text-outline text-label-sm font-label-sm">[TEXT]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(6)">
+<div class="flex items-center gap-space-2xs">user_id <span class="text-outline text-label-sm font-label-sm">[INT]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+<th class="py-space-xs px-space-md cursor-pointer hover:bg-surface-container" onclick="sortResultTable(7)">
+<div class="flex items-center gap-space-2xs">status <span class="text-outline text-label-sm font-label-sm">[VARCHAR]</span> <span class="material-symbols-outlined text-[14px] text-outline">unfold_more</span></div>
+</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40" id="result-table-body">
+<!-- Row 1 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors">
+<td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/40 select-none">1</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">1</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">John</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface"><span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm">admin</span></td>
+<td class="py-space-xs px-space-md font-mono text-on-surface font-medium">Hello World</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface-variant max-w-xs truncate">This is my first post</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">1</td>
+<td class="py-space-xs px-space-md font-mono"><span class="px-1.5 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm">published</span></td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors">
+<td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/40 select-none">2</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">1</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">John</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface"><span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm">admin</span></td>
+<td class="py-space-xs px-space-md font-mono text-on-surface font-medium">Hello World</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface-variant max-w-xs truncate">This is my second post</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">1</td>
+<td class="py-space-xs px-space-md font-mono"><span class="px-1.5 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm">published</span></td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-primary-fixed/20 transition-colors">
+<td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/40 select-none">3</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">2</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">Jane</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface"><span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm">user</span></td>
+<td class="py-space-xs px-space-md font-mono text-on-surface font-medium">Hello World</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface-variant max-w-xs truncate">This is my third post</td>
+<td class="py-space-xs px-space-md font-mono text-on-surface">2</td>
+<td class="py-space-xs px-space-md font-mono"><span class="px-1.5 py-0.5 rounded bg-secondary-container/40 text-secondary font-label-sm">published</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Panel 4 Footer -->
+<div class="h-7 bg-surface-container-low px-space-md flex items-center justify-between shrink-0 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span>Showing 1 - 3 of 3 records</span>
+<span>•</span>
+<span>Page 1 of 1</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span>Format: Matrix / JSON Compatible</span>
+<span class="text-secondary font-medium">Latency: 1.73ms</span>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- ================= MODAL 1: ER DIAGRAM MODAL ================= -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="modal-er-diagram">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-4xl h-[650px] flex flex-col overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="h-14 bg-surface-container-low px-space-lg flex items-center justify-between shrink-0 border-b-0">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">schema</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Entity Relationship Visualizer</h3>
+<p class="font-label-sm text-label-sm text-outline">Interactive Schema Topology: 2 Tables, 1 Reference</p>
+</div>
+</div>
+<!-- Diagram Controls -->
+<div class="flex items-center gap-space-xs">
+<div class="flex items-center bg-surface-container-lowest p-space-2xs rounded shadow-sm">
+<button class="p-space-xs text-outline hover:text-on-surface" title="Zoom In" type="button"><span class="material-symbols-outlined text-[18px]">zoom_in</span></button>
+<button class="p-space-xs text-outline hover:text-on-surface" title="Zoom Out" type="button"><span class="material-symbols-outlined text-[18px]">zoom_out</span></button>
+<button class="p-space-xs text-outline hover:text-on-surface" title="Fit to Screen" type="button"><span class="material-symbols-outlined text-[18px]">fit_screen</span></button>
+<button class="p-space-xs text-outline hover:text-on-surface" title="Reset View" type="button"><span class="material-symbols-outlined text-[18px]">restart_alt</span></button>
+</div>
+<button class="flex items-center gap-space-2xs px-space-md py-space-xs bg-surface-container-low hover:bg-surface-container text-on-surface font-body-sm text-body-sm rounded" onclick="showToast('Exported diagram as SVG/PNG')" type="button">
+<span class="material-symbols-outlined text-[16px]">image</span>Export PNG
+          </button>
+<button class="p-space-xs text-outline hover:text-on-surface rounded hover:bg-surface-container" id="btn-close-er" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Diagram Canvas / SVG Map -->
+<div class="flex-1 bg-surface-container-low relative overflow-hidden flex items-center justify-center p-space-xl">
+<!-- Grid Pattern Backdrop -->
+<div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(circle, #004ac6 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- SVG Orthogonal Connector with Crows-foot Cardinality -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10" fill="none" viewbox="0 0 800 500">
+<!-- Connection Path from users.id (approx 360, 240) to posts.user_id (approx 440, 260) -->
+<path class="animate-pulse" d="M 330 225 C 380 225, 400 240, 470 240" stroke="#004ac6" stroke-dasharray="4 2" stroke-width="2.5"></path>
+<!-- 1 indicator at users -->
+<circle cx="330" cy="225" fill="#004ac6" r="4"></circle>
+<line stroke="#004ac6" stroke-width="2" x1="338" x2="338" y1="218" y2="232"></line>
+<!-- Many / Crows Foot at posts -->
+<path d="M 470 240 L 458 232 M 470 240 L 458 248 M 458 232 L 458 248" stroke="#004ac6" stroke-linecap="round" stroke-width="2"></path>
+<text fill="#004ac6" font-family="JetBrains Mono" font-size="11" font-weight="600" x="385" y="215">1 : N</text>
+</svg>
+<!-- Dynamic Tables View -->
+<div class="relative z-20 flex items-center justify-center gap-32">
+<!-- Entity 1: users -->
+<div class="w-64 bg-surface-container-lowest rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+<div class="bg-primary px-space-md py-space-xs text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-[14px]">
+<span class="material-symbols-outlined text-[16px]">table_rows</span>
+<span>users</span>
+</div>
+<span class="font-label-sm text-label-sm bg-white/20 px-space-xs py-0.5 rounded">4 fields</span>
+</div>
+<div class="divide-y divide-surface-container-high/40 font-code-sm text-code-sm">
+<div class="p-space-xs flex items-center justify-between bg-primary-fixed/20">
+<span class="flex items-center gap-space-xs font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px] text-tertiary">key</span>id
+                </span>
+<span class="font-label-sm text-label-sm text-outline">INT PK</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">username</span>
+<span class="font-label-sm text-label-sm text-outline">VARCHAR</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">role</span>
+<span class="font-label-sm text-label-sm text-outline">VARCHAR</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">age</span>
+<span class="font-label-sm text-label-sm text-outline">INT</span>
+</div>
+</div>
+</div>
+<!-- Entity 2: posts -->
+<div class="w-64 bg-surface-container-lowest rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+<div class="bg-primary px-space-md py-space-xs text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs font-headline-sm text-headline-sm text-[14px]">
+<span class="material-symbols-outlined text-[16px]">table_rows</span>
+<span>posts</span>
+</div>
+<span class="font-label-sm text-label-sm bg-white/20 px-space-xs py-0.5 rounded">5 fields</span>
+</div>
+<div class="divide-y divide-surface-container-high/40 font-code-sm text-code-sm">
+<div class="p-space-xs flex items-center justify-between">
+<span class="flex items-center gap-space-xs font-semibold text-tertiary">
+<span class="material-symbols-outlined text-[14px]">key</span>id
+                </span>
+<span class="font-label-sm text-label-sm text-outline">INT PK</span>
+</div>
+<div class="p-space-xs flex items-center justify-between bg-primary-fixed/30">
+<span class="flex items-center gap-space-xs font-semibold text-primary">
+<span class="material-symbols-outlined text-[14px]">link</span>user_id
+                </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">INT FK</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">title</span>
+<span class="font-label-sm text-label-sm text-outline">VARCHAR</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">body</span>
+<span class="font-label-sm text-label-sm text-outline">TEXT</span>
+</div>
+<div class="p-space-xs flex items-center justify-between">
+<span class="text-on-surface">status</span>
+<span class="font-label-sm text-label-sm text-outline">VARCHAR</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= MODAL 2: SHARE MODAL ================= -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="modal-share">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg p-space-xl flex flex-col gap-space-lg animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">share</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Share Workspace</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-space-2xs" id="btn-close-share" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<label class="font-label-md text-label-md uppercase text-outline">Public Access Link</label>
+<div class="flex items-center gap-space-xs">
+<input class="flex-1 px-space-md py-space-xs bg-surface-container-low rounded font-code-sm text-code-sm text-on-surface focus:outline-none" id="share-link-input" readonly="" type="text" value="https://querylab.dev/s/ex-run-89f4b"/>
+<button class="px-space-md py-space-xs bg-primary text-on-primary font-body-sm text-body-sm font-semibold rounded hover:bg-primary-container transition-colors" id="btn-copy-share-link" type="button">
+            Copy Link
+          </button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-outline">Access Control</label>
+<select class="px-space-md py-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Anyone with link</option>
+<option>Private (Invited only)</option>
+<option>Restricted to Team</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md uppercase text-outline">Permission Level</label>
+<select class="px-space-md py-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>View only</option>
+<option>Can edit &amp; execute</option>
+<option>Admin / Full access</option>
+</select>
+</div>
+</div>
+<div class="flex justify-end pt-space-md">
+<button class="px-space-xl py-space-xs bg-primary text-on-primary font-body-sm text-body-sm font-medium rounded shadow-sm hover:bg-primary-container" onclick="closeAllModals(); showToast('Workspace settings saved!')" type="button">
+          Done
+        </button>
+</div>
+</div>
+</div>
+<!-- ================= MODAL 3: IMPORT MODAL ================= -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-center justify-center p-space-lg" id="modal-import">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl w-full max-w-lg p-space-xl flex flex-col gap-space-lg animate-in fade-in zoom-in-95 duration-200">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">cloud_upload</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Import Data or Schema</h3>
+</div>
+<button class="text-outline hover:text-on-surface p-space-2xs" id="btn-close-import" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Format Tabs -->
+<div class="flex items-center gap-space-2xs p-space-2xs bg-surface-container-low rounded">
+<button class="flex-1 py-space-xs text-center bg-surface-container-lowest text-primary font-body-sm text-body-sm font-semibold rounded shadow-sm" type="button">CSV</button>
+<button class="flex-1 py-space-xs text-center text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface" type="button">SQL DDL</button>
+<button class="flex-1 py-space-xs text-center text-on-surface-variant font-body-sm text-body-sm hover:text-on-surface" type="button">DBML File</button>
+</div>
+<!-- Drag & Drop Zone -->
+<div class="border-2 border-dashed border-outline/30 rounded-xl p-space-2xl flex flex-col items-center justify-center gap-space-xs text-center hover:border-primary cursor-pointer transition-colors bg-surface-container-low/40">
+<span class="material-symbols-outlined text-[36px] text-primary">upload_file</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Drag and drop file here</span>
+<span class="font-body-sm text-body-sm text-outline">Supports .csv, .tsv up to 25MB</span>
+<button class="mt-space-xs px-space-md py-space-xs bg-surface-container-lowest text-on-surface rounded shadow-sm font-body-sm text-body-sm" type="button">
+          Browse Computer
+        </button>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline">Header row will be parsed as column names</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-space-xs text-on-surface font-body-sm text-body-sm hover:bg-surface-container rounded" onclick="closeAllModals()" type="button">Cancel</button>
+<button class="px-space-xl py-space-xs bg-primary text-on-primary font-body-sm text-body-sm font-medium rounded shadow-sm hover:bg-primary-container" onclick="closeAllModals(); showToast('Importing 120 records into users...')" type="button">Import</button>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT DRAWER: QUERY HISTORY ================= -->
+<aside class="fixed right-0 top-16 bottom-0 w-80 bg-surface-container-lowest shadow-2xl z-40 transform translate-x-full transition-transform duration-300 flex flex-col justify-between" id="drawer-query-history">
+<div class="p-space-md flex flex-col gap-space-md overflow-y-auto">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Execution Log</h3>
+</div>
+<button class="p-space-2xs text-outline hover:text-on-surface" id="btn-close-history" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm font-code-sm text-code-sm">
+<!-- Log Item 1 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary font-bold">SUCCESS (3 rows)</span>
+<span class="text-outline">1.73 ms</span>
+</div>
+<div class="text-on-surface truncate font-medium">SELECT u.id, u.username, p.title FROM users...</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm text-outline font-label-sm">Just now</span>
+<div class="flex items-center gap-space-xs">
+<button class="text-primary hover:underline font-label-sm" onclick="showToast('Query reloaded in editor')" type="button">Open</button>
+<button class="text-outline hover:text-on-surface" onclick="showToast('Query copied')" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+<button class="text-outline hover:text-error" onclick="this.closest('.p-space-sm').remove(); showToast('Item deleted')" type="button"><span class="material-symbols-outlined text-[14px]">delete</span></button>
+</div>
+</div>
+</div>
+<!-- Log Item 2 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary font-bold">SUCCESS (1 row)</span>
+<span class="text-outline">0.92 ms</span>
+</div>
+<div class="text-on-surface truncate font-medium">SELECT MAX(salary) FROM employees WHERE...</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm text-outline font-label-sm">10m ago</span>
+<div class="flex items-center gap-space-xs">
+<button class="text-primary hover:underline font-label-sm" onclick="showToast('Query reloaded in editor')" type="button">Open</button>
+<button class="text-outline hover:text-on-surface" onclick="showToast('Query copied')" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+<button class="text-outline hover:text-error" onclick="this.closest('.p-space-sm').remove(); showToast('Item deleted')" type="button"><span class="material-symbols-outlined text-[14px]">delete</span></button>
+</div>
+</div>
+</div>
+<!-- Log Item 3 -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-2xs">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-error font-bold">SYNTAX ERROR</span>
+<span class="text-outline">2.11 ms</span>
+</div>
+<div class="text-on-surface truncate font-medium">SELECT * FORM users WHERE id = 1</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="text-label-sm text-outline font-label-sm">22m ago</span>
+<div class="flex items-center gap-space-xs">
+<button class="text-primary hover:underline font-label-sm" onclick="showToast('Query reloaded in editor')" type="button">Open</button>
+<button class="text-outline hover:text-on-surface" onclick="showToast('Query copied')" type="button"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+<button class="text-outline hover:text-error" onclick="this.closest('.p-space-sm').remove(); showToast('Item deleted')" type="button"><span class="material-symbols-outlined text-[14px]">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-error font-body-sm text-body-sm flex items-center gap-space-2xs" onclick="document.querySelectorAll('#drawer-query-history .p-space-sm').forEach(e =&gt; e.remove()); showToast('Query history cleared');" type="button">
+<span class="material-symbols-outlined text-[16px]">delete_sweep</span> Clear All History
+      </button>
+<span class="font-label-sm text-label-sm text-outline">Retained 7 days</span>
+</div>
+</aside>
+<!-- ================= CLIENT INTERACTION SCRIPTS ================= -->
+<script>
+    // Toast Notification Dispatcher
+    function showToast(message, isError = false) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = `px-space-md py-space-xs rounded-lg shadow-xl text-body-sm font-body-sm flex items-center gap-space-xs pointer-events-auto transform translate-y-2 opacity-0 transition-all duration-200 ${
+        isError ? 'bg-error text-on-error' : 'bg-inverse-surface text-inverse-on-surface'
+      }`;
+      toast.innerHTML = `
+        <span class="material-symbols-outlined text-[18px]">${isError ? 'error' : 'check_circle'}</span>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      }, 10);
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 200);
+      }, 3200);
+    }
+
+    // Modal Helpers
+    function openModal(id) {
+      const m = document.getElementById(id);
+      if (m) {
+        m.classList.remove('hidden');
+        m.classList.add('flex');
+      }
+    }
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      if (m) {
+        m.classList.add('hidden');
+        m.classList.remove('flex');
+      }
+    }
+    function closeAllModals() {
+      ['modal-er-diagram', 'modal-share', 'modal-import'].forEach(closeModal);
+    }
+
+    // Bind triggers to modals
+    document.getElementById('btn-view-er')?.addEventListener('click', () => openModal('modal-er-diagram'));
+    document.getElementById('btn-close-er')?.addEventListener('click', () => closeModal('modal-er-diagram'));
+    document.getElementById('btn-open-import')?.addEventListener('click', () => openModal('modal-import'));
+    document.getElementById('btn-close-import')?.addEventListener('click', () => closeModal('modal-import'));
+    document.getElementById('btn-close-share')?.addEventListener('click', () => closeModal('modal-share'));
+
+    // Share modal trigger (bind to global shell 'Share' button if present, or our test trigger)
+    document.querySelectorAll('button').forEach(btn => {
+      if (btn.innerText.trim().includes('Share')) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal('modal-share');
+        });
+      }
+      if (btn.innerText.trim().includes('Fork')) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          const projName = document.getElementById('active-project-name');
+          if (projName) {
+            projName.innerText = 'Example Run - Fork';
+          }
+          showToast('Project forked successfully: Example Run - Fork');
+        });
+      }
+      if (btn.innerText.trim().includes('Import')) {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          openModal('modal-import');
+        });
+      }
+    });
+
+    // Copy Share link
+    document.getElementById('btn-copy-share-link')?.addEventListener('click', () => {
+      const input = document.getElementById('share-link-input');
+      if (input) {
+        navigator.clipboard?.writeText(input.value);
+        showToast('Share link copied to clipboard!');
+      }
+    });
+
+    // Sidebar Collapse / Expand Toggle
+    const sidebar = document.getElementById('project-sidebar');
+    const collapseBtn = document.getElementById('sidebar-toggle-btn');
+    const expandBtn = document.getElementById('sidebar-expand-btn');
+
+    collapseBtn?.addEventListener('click', () => {
+      sidebar.classList.add('-ml-60');
+      expandBtn.classList.remove('hidden');
+      showToast('Sidebar collapsed');
+    });
+
+    expandBtn?.addEventListener('click', () => {
+      sidebar.classList.remove('-ml-60');
+      expandBtn.classList.add('hidden');
+    });
+
+    // Query History Drawer Toggle
+    const historyDrawer = document.getElementById('drawer-query-history');
+    const openHistoryBtn = document.getElementById('btn-open-history');
+    const closeHistoryBtn = document.getElementById('btn-close-history');
+    const triggerHistoryNav = document.getElementById('trigger-history-drawer-btn');
+
+    function toggleHistoryDrawer(open) {
+      if (open) {
+        historyDrawer.classList.remove('translate-x-full');
+      } else {
+        historyDrawer.classList.add('translate-x-full');
+      }
+    }
+    openHistoryBtn?.addEventListener('click', () => toggleHistoryDrawer(true));
+    triggerHistoryNav?.addEventListener('click', () => toggleHistoryDrawer(true));
+    closeHistoryBtn?.addEventListener('click', () => toggleHistoryDrawer(false));
+
+    // ▶ RUN QUERY Micro-interaction
+    const runBtn = document.getElementById('btn-run-query');
+    const runIcon = document.getElementById('run-icon');
+    const runSpinner = document.getElementById('run-spinner');
+    const execStrip = document.getElementById('execution-status-strip');
+    const execStatusText = document.getElementById('exec-status-text');
+    const resultTableBody = document.getElementById('result-table-body');
+
+    runBtn?.addEventListener('click', () => {
+      // Toggle spinner state
+      runIcon.classList.add('hidden');
+      runSpinner.classList.remove('hidden');
+      runBtn.classList.add('opacity-75');
+
+      setTimeout(() => {
+        runIcon.classList.remove('hidden');
+        runSpinner.classList.add('hidden');
+        runBtn.classList.remove('opacity-75');
+
+        // Randomized execution metrics
+        const ms = (Math.random() * 1.5 + 0.8).toFixed(2);
+        execStatusText.textContent = `✓ 3 rows returned • Executed in ${ms} ms • Memory: 42 KB`;
+
+        // Flash green execution indicator
+        execStrip.classList.add('bg-secondary-container/40');
+        setTimeout(() => execStrip.classList.remove('bg-secondary-container/40'), 600);
+
+        // Flash table
+        resultTableBody.classList.add('opacity-40');
+        setTimeout(() => {
+          resultTableBody.classList.remove('opacity-40');
+          showToast(`Query executed in ${ms}ms (3 rows)`);
+        }, 150);
+      }, 420);
+    });
+
+    // Keyboard shortcut for Cmd+Enter / Ctrl+Enter
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        runBtn?.click();
+      }
+    });
+
+    // Switch Table between users and posts in Panel 2
+    let currentActiveTable = 'users';
+    const usersTableHtml = `
+      <thead class="sticky top-0 bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none z-10 shadow-sm">
+        <tr>
+          <th class="w-12 py-space-xs px-space-sm text-center text-outline font-normal">#</th>
+          <th class="py-space-xs px-space-md">id <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+          <th class="py-space-xs px-space-md">username <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+          <th class="py-space-xs px-space-md">role <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+          <th class="py-space-xs px-space-md">age <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+          <th class="w-12"></th>
+        </tr>
+      </thead>
+      <tbody id="data-editor-body" class="divide-y divide-surface-container-high/40">
+        <tr class="hover:bg-primary-fixed/20 transition-colors group">
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">1</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">1</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">John</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">admin</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">20</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        </tr>
+        <tr class="hover:bg-primary-fixed/20 transition-colors group">
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">2</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">2</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">Jane</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">user</td>
+          <td class="py-space-xs px-space-md font-mono text-on-surface" contenteditable="true">30</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        </tr>
+        <tr id="ghost-row" onclick="inlineAddRow()" class="cursor-pointer text-outline hover:text-primary hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-space-xs px-space-sm text-center text-outline/50 bg-surface-container-low/30">+</td>
+          <td colspan="5" class="py-space-xs px-space-md italic font-label-md text-label-md">+ Click to add row...</td>
+        </tr>
+      </tbody>
+    `;
+
+    const postsTableHtml = `
+      <thead class="sticky top-0 bg-surface-container-low text-on-surface-variant font-label-md text-label-md select-none z-10 shadow-sm">
+        <tr>
+          <th class="w-12 py-space-xs px-space-sm text-center text-outline font-normal">#</th>
+          <th class="py-space-xs px-space-md">id <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+          <th class="py-space-xs px-space-md">user_id <span class="text-outline text-label-sm font-label-sm">[int]</span></th>
+          <th class="py-space-xs px-space-md">title <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+          <th class="py-space-xs px-space-md">body <span class="text-outline text-label-sm font-label-sm">[text]</span></th>
+          <th class="py-space-xs px-space-md">status <span class="text-outline text-label-sm font-label-sm">[varchar]</span></th>
+          <th class="w-12"></th>
+        </tr>
+      </thead>
+      <tbody id="data-editor-body" class="divide-y divide-surface-container-high/40">
+        <tr class="hover:bg-primary-fixed/20 transition-colors group">
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">1</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">101</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">1</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">Hello World</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">This is my first post</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">published</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        </tr>
+        <tr class="hover:bg-primary-fixed/20 transition-colors group">
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">2</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">102</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">1</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">Second Post</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">This is my second post</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">published</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        </tr>
+        <tr class="hover:bg-primary-fixed/20 transition-colors group">
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">3</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">103</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">2</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">Tech Insights</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">This is my third post</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">published</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        </tr>
+        <tr id="ghost-row" onclick="inlineAddRow()" class="cursor-pointer text-outline hover:text-primary hover:bg-surface-container-low/60 transition-colors">
+          <td class="py-space-xs px-space-sm text-center text-outline/50 bg-surface-container-low/30">+</td>
+          <td colspan="6" class="py-space-xs px-space-md italic font-label-md text-label-md">+ Click to add row...</td>
+        </tr>
+      </tbody>
+    `;
+
+    function switchDataTable(table) {
+      currentActiveTable = table;
+      const tabUsers = document.getElementById('tab-data-users');
+      const tabPosts = document.getElementById('tab-data-posts');
+      const tableElem = document.getElementById('spreadsheet-table');
+      const countStatus = document.getElementById('data-grid-count-status');
+
+      if (table === 'users') {
+        tabUsers.className = 'px-space-sm py-space-2xs bg-surface-container-lowest shadow-sm rounded text-primary font-body-sm text-body-sm font-semibold flex items-center gap-space-2xs transition-all';
+        tabPosts.className = 'px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface rounded font-body-sm text-body-sm flex items-center gap-space-2xs transition-all';
+        tableElem.innerHTML = usersTableHtml;
+        countStatus.textContent = '2 rows, 4 columns';
+      } else {
+        tabPosts.className = 'px-space-sm py-space-2xs bg-surface-container-lowest shadow-sm rounded text-primary font-body-sm text-body-sm font-semibold flex items-center gap-space-2xs transition-all';
+        tabUsers.className = 'px-space-sm py-space-2xs text-on-surface-variant hover:text-on-surface rounded font-body-sm text-body-sm flex items-center gap-space-2xs transition-all';
+        tableElem.innerHTML = postsTableHtml;
+        countStatus.textContent = '3 rows, 5 columns';
+      }
+      showToast(`Switched active view to '${table}'`);
+    }
+
+    // Add Row dynamically
+    function inlineAddRow() {
+      const tbody = document.getElementById('data-editor-body');
+      const ghost = document.getElementById('ghost-row');
+      if (!tbody || !ghost) return;
+
+      const rowsCount = tbody.querySelectorAll('tr:not(#ghost-row)').length + 1;
+      const newTr = document.createElement('tr');
+      newTr.className = 'hover:bg-primary-fixed/20 transition-colors group';
+
+      if (currentActiveTable === 'users') {
+        newTr.innerHTML = `
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">${rowsCount}</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">${rowsCount}</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">new_user</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">viewer</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">25</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        `;
+      } else {
+        newTr.innerHTML = `
+          <td class="py-space-xs px-space-sm text-center text-outline bg-surface-container-low/50 select-none">${rowsCount}</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">${100 + rowsCount}</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">1</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">New Blog Post</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">Draft content text</td>
+          <td class="py-space-xs px-space-md font-mono" contenteditable="true">draft</td>
+          <td class="py-space-xs px-space-sm text-right opacity-0 group-hover:opacity-100 transition-opacity">
+            <button type="button" onclick="deleteTableRow(this)" class="text-outline hover:text-error"><span class="material-symbols-outlined text-[16px]">close</span></button>
+          </td>
+        `;
+      }
+
+      tbody.insertBefore(newTr, ghost);
+      const countLabel = document.getElementById('data-grid-count-status');
+      if (countLabel) countLabel.textContent = `${rowsCount} rows • Changes staged`;
+      showToast(`Added row ${rowsCount} to ${currentActiveTable}`);
+    }
+
+    document.getElementById('btn-add-row')?.addEventListener('click', inlineAddRow);
+
+    function deleteTableRow(btn) {
+      const row = btn.closest('tr');
+      if (row) {
+        row.remove();
+        showToast('Row removed from stage');
+      }
+    }
+
+    // Generate sample data
+    document.getElementById('btn-gen-sample')?.addEventListener('click', () => {
+      inlineAddRow();
+      showToast('Generated 1 synthetic test record with Faker');
+    });
+
+    // Copy JSON from Results
+    document.getElementById('btn-copy-json')?.addEventListener('click', () => {
+      const sampleResultJson = JSON.stringify([
+        { id: 1, username: "John", role: "admin", title: "Hello World", body: "This is my first post", user_id: 1, status: "published" },
+        { id: 1, username: "John", role: "admin", title: "Hello World", body: "This is my second post", user_id: 1, status: "published" },
+        { id: 2, username: "Jane", role: "user", title: "Hello World", body: "This is my third post", user_id: 2, status: "published" }
+      ], null, 2);
+      navigator.clipboard?.writeText(sampleResultJson);
+      showToast('Copied 3 result records as formatted JSON');
+    });
+
+    // Download CSV mock
+    function triggerDownloadCSV(filename) {
+      showToast(`Downloaded ${filename}`);
+    }
+
+    // Filter Result Table
+    function filterResultTable() {
+      const input = document.getElementById('result-filter-input');
+      const filter = input.value.toLowerCase();
+      const rows = document.querySelectorAll('#result-table-body tr');
+
+      let visibleCount = 0;
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        if (text.includes(filter)) {
+          r.style.display = '';
+          visibleCount++;
+        } else {
+          r.style.display = 'none';
+        }
+      });
+      const badge = document.getElementById('result-badge-count');
+      if (badge) badge.textContent = `${visibleCount} rows`;
+    }
+
+    // Sort Result Table Simple Toggle
+    let sortAsc = true;
+    function sortResultTable(colIdx) {
+      const tbody = document.getElementById('result-table-body');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort((a, b) => {
+        const aVal = a.children[colIdx]?.innerText.trim() || '';
+        const bVal = b.children[colIdx]?.innerText.trim() || '';
+        return sortAsc ? aVal.localeCompare(bVal, undefined, {numeric: true}) : bVal.localeCompare(aVal, undefined, {numeric: true});
+      });
+      sortAsc = !sortAsc;
+      rows.forEach(r => tbody.appendChild(r));
+      showToast(`Sorted by column ${colIdx} (${sortAsc ? 'ASC' : 'DESC'})`);
+    }
+
+    // Load recent query into editor
+    function loadSampleQuery(type) {
+      const editor = document.getElementById('sql-editor-area');
+      if (!editor) return;
+      if (type === 'duplicate') {
+        editor.innerText = `-- Find duplicate users by email\nSELECT username, COUNT(*)\nFROM users\nGROUP BY username\nHAVING COUNT(*) > 1;`;
+      } else if (type === 'salary') {
+        editor.innerText = `-- Get second highest salary\nSELECT DISTINCT salary\nFROM employees\nORDER BY salary DESC\nLIMIT 1 OFFSET 1;`;
+      } else if (type === 'dept') {
+        editor.innerText = `-- Count employees per department\nSELECT d.name, COUNT(e.id) AS emp_count\nFROM departments d\nLEFT JOIN employees e ON d.id = e.department_id\nGROUP BY d.name;`;
+      } else {
+        editor.innerText = `-- Top 3 Salaries across organization\nSELECT name, salary\nFROM employees\nORDER BY salary DESC\nLIMIT 3;`;
+      }
+      showToast('Query loaded into SQL Editor');
+    }
+
+    // Format SQL button
+    document.getElementById('btn-format-sql')?.addEventListener('click', () => {
+      showToast('SQL syntax auto-formatted');
+    });
+
+    // Explain Plan button
+    document.getElementById('btn-explain-plan')?.addEventListener('click', () => {
+      showToast('EXPLAIN ANALYZE: Hash Join cost=12.4..35.8 rows=3');
+    });
+
+    // Clear Query
+    document.getElementById('btn-clear-query')?.addEventListener('click', () => {
+      const ed = document.getElementById('sql-editor-area');
+      if (ed) ed.innerText = '';
+      showToast('Editor cleared');
+    });
+  </script>
+</div></main></div></body></html>
