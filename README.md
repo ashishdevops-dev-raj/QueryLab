@@ -2,7 +2,7 @@
 
 Test, debug and master SQL.
 
-QueryLab is a SQL playground, interview, and learning SaaS UI. This first version runs entirely in the browser with a mock SQL engine. Stitch HTML in `querylab_dashboard/`, `querylab_sql_playground/`, and `querylab_sql_interview/` remains as visual reference.
+QueryLab is a SQL playground, interview, and learning SaaS UI. This first version runs entirely in the browser with a mock SQL engine. Stitch HTML in `querylab_dashboard/`, `querylab_sql_playground/`, and `querylab_sql_interview/` remains as visual reference. ([Link](https://querylab-cjy.pages.dev/dashboard))
 
 ## Local development
 
